@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+.ant-layout{
+  background-color: #fdfdfb
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.site-layout .site-layout-background {
+  background: #fff;
+}   
+.ant-layout-header{
+  min-height: 5vh
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-menu-item-selected{
+  color:black !important;
+  font-weight: bold !important;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background-color: #e5e5e3 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after{
+ border-right:none !important ; 
 }
 
-.App-link {
-  color: #61dafb;
+.ant-menu-vertical .ant-menu-item, .ant-menu-vertical-left .ant-menu-item, .ant-menu-vertical-right .ant-menu-item, .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-submenu-title, .ant-menu-vertical-left .ant-menu-submenu-title, .ant-menu-vertical-right .ant-menu-submenu-title, .ant-menu-inline .ant-menu-submenu-title{
+  margin-top: 0px !important;
+  opacity: 0.9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-menu-item{
+  padding: 1rem !important;
+  height: auto !important;
+  line-height: 0.9rem !important;
+}
+
+aside.ant-layout-sider {
+  box-sizing: border-box !important;
+  border-right: 1px solid #f0f0f0 !important;
+    border-right-width: 1px !important;
+    border-right-style: solid !important;
+    border-right-color: rgb(240, 240, 240) !important;
+}
+
+.toolbar-header{
+  background-color: #dbd9db !important;
+  height:auto !important;
+  padding:0.1rem !important;
+  line-height: 48px !important;
+  padding-left: 200px  !important;
+}
+
+.toolbar-header button {
+  width: 50px !important ;
+  border-radius: 5px  !important ;
+  background-color: #f3f3f3 !important;
+  margin-right: 1rem;
+}
+.ant-btn-icon-only > *{
+  font-size: 1.2rem !important;
+  opacity: 0.7;
 }

@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useState} from 'react';
+import { Layout } from 'antd';
+import SideBar from './components/side-bar';
+import IMacHeader from './components/header';
+import RightContent from './components/right-content';
 import './App.css';
+import "antd/dist/antd.css";
 
-function App() {
+const { Header, Content, Footer } = Layout;
+
+
+function App() { 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div >
+    <IMacHeader />
+    <Layout className="site-layout" style={{ minHeight: '95vh' }}>      
+      <SideBar/>
+    <Layout >
+    <RightContent/>
+    </Layout>
+  </Layout>
+  </div>
+    );
 }
 
 export default App;
